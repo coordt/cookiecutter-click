@@ -1,0 +1,6 @@
+-r test.txt
+-r prod.txt
+bump2version>=1.0.0
+gitchangelog>=3.0.3
+pystache>=0.5.4
+black

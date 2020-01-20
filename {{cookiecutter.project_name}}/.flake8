@@ -1,0 +1,12 @@
+[flake8]
+exclude =
+    .git,
+    .tox,
+    docs/conf.py,
+    build,
+    dist,
+    venv
+max-line-length = 119
+ignore =
+    D203, # Don't require 1 blank line required before class docstring
+    D400  # If you want to end lines with exclamation marks, why not?

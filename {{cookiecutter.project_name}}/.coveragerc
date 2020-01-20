@@ -1,13 +1,18 @@
 # .coveragerc to control coverage.py
 [run]
+branch = true
 omit =
     */venv/*
     */tests/*
     */docs/*
     */dist/*
+    *site-packages*
+    *tests*
+    *.tox*
     setup.py
     scratch*.py
 
-[html]
-directory=./htmlcov
-
+[report]
+show_missing = True
+exclude_lines =
+    raise NotImplementedError
